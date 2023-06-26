@@ -1,0 +1,22 @@
+spring:
+  data:
+    jpa:
+      repositories:
+        enabled: true
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    password: Deep@1234
+    url: jdbc:mysql://host.docker.internal:3306/deepakdb
+    username: Deepak
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  security:
+      user:
+       name: admin
+       password: admin
+       
+server:
+  port: 8182
